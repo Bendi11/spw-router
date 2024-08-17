@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "DE9")(type "KiCad")(uri "/home/benl/dev/spw-router/hw/models/DE9.pretty")(options "")(descr ""))
+)
