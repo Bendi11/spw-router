@@ -1,0 +1,971 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e849d677-10b5-4606-b461-6e401bb974f0")
+	(paper "A4")
+	(lib_symbols
+		(symbol "DE9:SpaceWire_Receptacle"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -1.27 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "DE9:DE9_Pins"
+				(at -1.27 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -1.27 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at -1.27 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SpaceWire_Receptacle_0_1"
+				(polyline
+					(pts
+						(xy -3.81 13.97) (xy -3.81 -13.97) (xy 3.81 -10.16) (xy 3.81 10.16) (xy -3.81 13.97)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SpaceWire_Receptacle_1_1"
+				(pin input line
+					(at -7.62 10.16 0)
+					(length 3.81)
+					(name "D_{in}P"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 5.08 0)
+					(length 3.81)
+					(name "S_{in}P"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -10.16 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 -2.54 0)
+					(length 3.81)
+					(name "S_{out}N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 -7.62 0)
+					(length 3.81)
+					(name "D_{out}N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 7.62 0)
+					(length 3.81)
+					(name "D_{in}N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 3.81)
+					(name "S_{in}N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "S_{out}P"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 -5.08 0)
+					(length 3.81)
+					(name "D_{out}P"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DE9:SpaceWire_Receptacle")
+		(at 156.21 111.76 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40b3c86c-d5cd-45cd-98f9-9a5a6104eb67")
+		(property "Reference" "J3"
+			(at 151.13 111.1249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 151.13 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DE9:DE9_Pins"
+			(at 157.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d74807a-45c0-4593-859a-cd6ee36e034c")
+		)
+		(pin "6"
+			(uuid "df915849-d93d-4cdb-b959-43eb5ac832be")
+		)
+		(pin "7"
+			(uuid "485ed350-fa2b-48ab-80af-0e69a7176a1f")
+		)
+		(pin "3"
+			(uuid "683af372-9380-41da-953a-ee3a131b1bd4")
+		)
+		(pin "2"
+			(uuid "f1ac6025-be29-48cc-aad5-52484cd5e7af")
+		)
+		(pin "8"
+			(uuid "433b08ab-ede9-4306-a4ed-56221b07063e")
+		)
+		(pin "9"
+			(uuid "b9b2380c-a8ca-4065-b1a6-f90e04097610")
+		)
+		(pin "5"
+			(uuid "45adf846-3f56-4a93-9ac7-9a2ee9970bcf")
+		)
+		(pin "4"
+			(uuid "f7fc99e2-461f-4955-87ab-415ed57eaee3")
+		)
+		(instances
+			(project "board"
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4/3792d272-ff69-4aa2-a357-018752cd6a75"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DE9:SpaceWire_Receptacle")
+		(at 156.21 35.56 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5259033b-c6e2-42ed-a793-d563428d4b88")
+		(property "Reference" "J1"
+			(at 151.13 34.9249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 151.13 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DE9:DE9_Pins"
+			(at 157.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a252e1e-120d-4c09-8c45-f1b1b65faa6c")
+		)
+		(pin "6"
+			(uuid "7270615b-3bf5-4a28-9be4-85c73c723075")
+		)
+		(pin "7"
+			(uuid "a1252739-f961-4fe1-926d-0d0a5dab3804")
+		)
+		(pin "3"
+			(uuid "15f6b160-3a93-49c7-9d73-6e1c19beaaeb")
+		)
+		(pin "2"
+			(uuid "b32b4fe4-5dda-4436-926f-dc85cdef96c0")
+		)
+		(pin "8"
+			(uuid "b5a70d11-542c-40b7-aba0-2afce84a100b")
+		)
+		(pin "9"
+			(uuid "10fe8c36-b263-4411-a647-1bda8de81bac")
+		)
+		(pin "5"
+			(uuid "0dd09afa-387b-421f-9949-d63d41a2ef22")
+		)
+		(pin "4"
+			(uuid "b28bbff1-d7b7-46d9-89de-191c6fb83da5")
+		)
+		(instances
+			(project "board"
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4/3792d272-ff69-4aa2-a357-018752cd6a75"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DE9:SpaceWire_Receptacle")
+		(at 156.21 149.86 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58337be5-0eff-462a-b835-18830a767734")
+		(property "Reference" "J4"
+			(at 151.13 149.2249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 151.13 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DE9:DE9_Pins"
+			(at 157.48 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0af776be-5f65-4146-b2ca-a54ae6b15b8a")
+		)
+		(pin "6"
+			(uuid "b2aebc25-8cbc-4f39-9a1f-47ae81d795b4")
+		)
+		(pin "7"
+			(uuid "1af2159d-fe17-43c1-a585-53ba894d3e84")
+		)
+		(pin "3"
+			(uuid "5dc276b8-e4cc-41dc-8aa6-40e8e97d6d0d")
+		)
+		(pin "2"
+			(uuid "c39b7db1-ee43-49f4-9fdb-186dd834ce2a")
+		)
+		(pin "8"
+			(uuid "9e2b4399-bc53-40fb-bc82-1cf8d1c1c872")
+		)
+		(pin "9"
+			(uuid "57fac380-ec97-42b0-b0f1-99b2a3c3b9ee")
+		)
+		(pin "5"
+			(uuid "50ee20d2-c2c7-419b-bf62-e4066452aca5")
+		)
+		(pin "4"
+			(uuid "7c4f5254-028f-40cc-ab03-5c02136aa3b0")
+		)
+		(instances
+			(project "board"
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4/3792d272-ff69-4aa2-a357-018752cd6a75"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DE9:SpaceWire_Receptacle")
+		(at 29.21 73.66 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e7074d0-6d2c-4ba8-84a1-4c02f22edf9d")
+		(property "Reference" "J6"
+			(at 24.13 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 24.13 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DE9:DE9_Pins"
+			(at 30.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4806fa5-2c1d-4e4f-9537-2dbaf56236f7")
+		)
+		(pin "6"
+			(uuid "e38e0735-f226-4c21-830d-3ddbe3f64360")
+		)
+		(pin "7"
+			(uuid "24f474aa-ec14-44ca-b7ca-cf1b4237e725")
+		)
+		(pin "3"
+			(uuid "f4efe8e8-21d1-45c1-b777-bbfc13caaf30")
+		)
+		(pin "2"
+			(uuid "4145c3b1-f4bd-4dfc-b776-150ab9174d93")
+		)
+		(pin "8"
+			(uuid "1b1366bb-ddbd-4c4d-82a8-020e6d50a658")
+		)
+		(pin "9"
+			(uuid "30873b05-f236-45b5-9f4d-8b10e549570c")
+		)
+		(pin "5"
+			(uuid "b635f255-2d5c-4648-8b50-8257d88e9866")
+		)
+		(pin "4"
+			(uuid "77ad1168-2a4f-4515-9391-a1061742e793")
+		)
+		(instances
+			(project "board"
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4/3792d272-ff69-4aa2-a357-018752cd6a75"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DE9:SpaceWire_Receptacle")
+		(at 156.21 73.66 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d38fe84b-d2d6-4e76-a3ea-3d67a32c8fbe")
+		(property "Reference" "J2"
+			(at 151.13 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 151.13 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DE9:DE9_Pins"
+			(at 157.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6d7bc77-c633-4e2c-9e9b-fcc359262794")
+		)
+		(pin "6"
+			(uuid "592bc915-3f0c-48a7-b9b9-6df7118133bb")
+		)
+		(pin "7"
+			(uuid "e3d3de80-6202-4abb-8d4c-5deb43414f03")
+		)
+		(pin "3"
+			(uuid "ce2ac989-9edc-4c42-b32b-5bfb1333625f")
+		)
+		(pin "2"
+			(uuid "7ff60420-d976-4be3-8f3a-a3dba1ecfac5")
+		)
+		(pin "8"
+			(uuid "e9d12322-09f1-453e-8700-3211e45aea07")
+		)
+		(pin "9"
+			(uuid "a4ce4def-712e-4cfb-a969-91a9760b704d")
+		)
+		(pin "5"
+			(uuid "59cc3375-0efc-4602-970a-599b942372c9")
+		)
+		(pin "4"
+			(uuid "52a15a8a-e01f-4f1f-9dc3-c7238bef5fcc")
+		)
+		(instances
+			(project "board"
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4/3792d272-ff69-4aa2-a357-018752cd6a75"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DE9:SpaceWire_Receptacle")
+		(at 29.21 111.76 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5082236-b903-4c5e-b0df-1fe2de7e45cd")
+		(property "Reference" "J7"
+			(at 24.13 111.1249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 24.13 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DE9:DE9_Pins"
+			(at 30.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c97588a-ec39-43c7-ab8e-2bb6ff88f9c3")
+		)
+		(pin "6"
+			(uuid "a140e8fa-f2c2-4b2b-960a-d65dd9430c51")
+		)
+		(pin "7"
+			(uuid "5ec963e7-081f-46b9-bac4-1039a53097df")
+		)
+		(pin "3"
+			(uuid "0e62903c-baf3-435b-a62a-0afcef810582")
+		)
+		(pin "2"
+			(uuid "ddad80d6-24f1-4f6e-af4d-39f57f2d69d6")
+		)
+		(pin "8"
+			(uuid "35639109-0cc7-4fe4-83a3-09c086fee6ab")
+		)
+		(pin "9"
+			(uuid "eddedc56-3955-4daf-8977-6259e024dd2e")
+		)
+		(pin "5"
+			(uuid "916a17c9-3d4b-4f36-8657-fe69ae83b40e")
+		)
+		(pin "4"
+			(uuid "b372d50b-9fd5-4cf8-9673-63c565262d84")
+		)
+		(instances
+			(project "board"
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4/3792d272-ff69-4aa2-a357-018752cd6a75"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DE9:SpaceWire_Receptacle")
+		(at 29.21 149.86 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecd4c6c6-159f-42ee-8bf6-c087d3010448")
+		(property "Reference" "J8"
+			(at 24.13 149.2249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 24.13 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DE9:DE9_Pins"
+			(at 30.48 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef5bc12f-ba50-49b7-8419-bf302be1cb9c")
+		)
+		(pin "6"
+			(uuid "9261d08f-0928-4641-a0bd-4237dad14623")
+		)
+		(pin "7"
+			(uuid "f4d25fcc-06a2-4637-bbcb-dac42e41c506")
+		)
+		(pin "3"
+			(uuid "59eaa183-9f9b-41a1-b29f-9aaf6948d017")
+		)
+		(pin "2"
+			(uuid "a30ff862-a7cb-4fc9-8c04-ff836ca4fa0c")
+		)
+		(pin "8"
+			(uuid "ab354992-6222-4e84-bda1-4df8932f976a")
+		)
+		(pin "9"
+			(uuid "a90f5de8-640f-4632-b96d-663c930932a7")
+		)
+		(pin "5"
+			(uuid "c67c8283-4740-4513-881a-4a0d7cde5f6a")
+		)
+		(pin "4"
+			(uuid "3b3eb493-5885-4b3f-b5ef-367314c98219")
+		)
+		(instances
+			(project "board"
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4/3792d272-ff69-4aa2-a357-018752cd6a75"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "DE9:SpaceWire_Receptacle")
+		(at 29.21 35.56 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f285a000-4f51-4ecb-a5f5-c5b05f70515f")
+		(property "Reference" "J5"
+			(at 24.13 34.9249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 24.13 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "DE9:DE9_Pins"
+			(at 30.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "590042e4-dc45-40c8-87fd-3cabfc64483d")
+		)
+		(pin "6"
+			(uuid "fd6e471e-3ab1-44e6-af30-4355c207ee1e")
+		)
+		(pin "7"
+			(uuid "30766303-5ec8-4118-82c9-c218a68dbb1c")
+		)
+		(pin "3"
+			(uuid "a408ee54-9f5a-418b-bcef-93789b3dc2c8")
+		)
+		(pin "2"
+			(uuid "7492a1ef-0d06-448d-a29e-3f79f8b53e63")
+		)
+		(pin "8"
+			(uuid "31fc68e3-d88f-4120-a280-4791afa61ce2")
+		)
+		(pin "9"
+			(uuid "5452438f-6022-46a3-8e68-19a4b6b77d86")
+		)
+		(pin "5"
+			(uuid "b9f47540-1ff3-4093-8db3-6f345d572839")
+		)
+		(pin "4"
+			(uuid "32467c81-64ac-4443-861c-2930072d6b83")
+		)
+		(instances
+			(project "board"
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4/3792d272-ff69-4aa2-a357-018752cd6a75"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
