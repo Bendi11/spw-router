@@ -5929,6 +5929,28 @@
 			)
 		)
 	)
+	(global_label "VCCO_14"
+		(shape input)
+		(at 344.17 137.16 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2267085a-fe52-473f-b6a8-fab2d4312da9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 344.17 125.8291 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D_{out}2_P"
 		(shape output)
 		(at 143.51 266.7 0)
@@ -6149,6 +6171,28 @@
 			)
 		)
 	)
+	(global_label "VCCO_15"
+		(shape input)
+		(at 425.45 137.16 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a8a3ded-5734-40a3-9abd-5686e97ec700")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 425.45 125.8291 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "S_{out}5_P"
 		(shape output)
 		(at 435.61 190.5 0)
@@ -6338,6 +6382,28 @@
 		(uuid "859d83fc-80d6-41da-b168-159e13a335c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 152.5548 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCCO_35"
+		(shape input)
+		(at 133.35 137.16 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8a63c5fe-6b3a-42b3-a85f-4c77d5b4299c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 133.35 125.8291 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7156,72 +7222,6 @@
 			(project "board"
 				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+2V5")
-		(at 425.45 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e47c34b-da09-47c6-8559-24b2cc6c4de5")
-		(property "Reference" "#PWR014"
-			(at 425.45 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2V5"
-			(at 425.45 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 425.45 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 425.45 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e702a1d5-c6e2-4472-9863-ab5a788e6dad")
-		)
-		(instances
-			(project "board"
-				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4"
-					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -8952,72 +8952,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+2V5")
-		(at 133.35 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa126d33-8981-44fe-a0c8-33736df294f4")
-		(property "Reference" "#PWR09"
-			(at 133.35 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2V5"
-			(at 133.35 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 133.35 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24bd9b0e-a054-43c3-8137-927444d5c85d")
-		)
-		(instances
-			(project "board"
-				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "FPGA_Xilinx_Artix7:XC7A35T-FTG256")
 		(at 501.65 72.39 0)
 		(unit 3)
@@ -9909,72 +9843,6 @@
 			(project "board"
 				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+2V5")
-		(at 344.17 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cb26a419-57dd-4549-a79b-61fb0094d101")
-		(property "Reference" "#PWR013"
-			(at 344.17 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+2V5"
-			(at 344.17 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 344.17 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 344.17 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 344.17 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "26142d98-ac2a-470f-b6df-edcb83bc6dc1")
-		)
-		(instances
-			(project "board"
-				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
