@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -119,18 +119,18 @@
         "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.15,
+        "min_hole_to_hole": 0.15,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.075,
+        "min_via_diameter": 0.35,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -179,6 +179,7 @@
       ],
       "track_widths": [
         0.0,
+        0.15,
         0.4
       ],
       "tuning_pattern_settings": {
@@ -467,7 +468,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.35,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -484,7 +485,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.35,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -501,7 +502,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.35,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -535,7 +536,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.6,
+        "via_diameter": 0.35,
         "via_drill": 0.3,
         "wire_width": 6
       }
@@ -701,6 +702,10 @@
     [
       "3792d272-ff69-4aa2-a357-018752cd6a75",
       "SpW Connection"
+    ],
+    [
+      "1f74052e-5889-441a-be42-0e37c50cc8ab",
+      "STM32"
     ]
   ],
   "text_variables": {}
