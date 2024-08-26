@@ -583,7 +583,6 @@
     },
     "net_colors": null,
     "netclass_assignments": {
-      "Net-(U2-VIN)": "12V",
       "Net-(U5-VIN)": "12V"
     },
     "netclass_patterns": [
