@@ -7,15 +7,13 @@ DEVICE := xc7a35tftg256-2
 CHIPDB := ./${DEVICE}.bin
 
 XDC := ./src/xc7.xdc
-SOURCES := ./src/top.v
+SOURCES := ./src/top.v ./src/channel.v
 BUILD := ./build
-
-.PHONY: build
 
 
 ACTIVATE_ENV := 
 ${BUILD}/top.json: ${SOURCES}
-	mkdir ${BUILD} && yosys -p "synth_xilinx -flatten -nowidelut -abc9 -arch xc7 -top top; write_json ${BUILD}/top.json" ${SOURCES}
+	mkdir -p ${BUILD} && yosys -p "synth_xilinx -flatten -nowidelut -abc9 -arch xc7 -top top; write_json ${BUILD}/top.json" ${SOURCES}
 
 ${BUILD}/top.fasm: ${BUILD}/top.json
 	"${NEXTPNR_XILINX}/nextpnr-xilinx" --chipdb ${CHIPDB} --xdc ${XDC} --json ${BUILD}/top.json --write ${BUILD}/top-routed.json --fasm ${BUILD}/top.fasm
@@ -28,5 +26,7 @@ ${BUILD}/top.bit: ${BUILD}/top.frames
 
 build: ${BUILD}/top.bit
 
+
+.PHONY: clean
 clean:
 	rm -r ./build
