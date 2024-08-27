@@ -6768,10 +6768,6 @@
 		(uuid "ce9b22d3-9ef0-4ddc-86af-1c475c1815f8")
 	)
 	(no_connect
-		(at 334.01 180.34)
-		(uuid "d03a737e-727e-4e86-8e5c-8cb101a8467d")
-	)
-	(no_connect
 		(at 196.85 95.25)
 		(uuid "d15b32ba-0155-4f03-bd30-19c58d5698ce")
 	)
@@ -7138,6 +7134,16 @@
 			(type default)
 		)
 		(uuid "3617923e-8548-4c90-bc0b-56b8c6900d33")
+	)
+	(wire
+		(pts
+			(xy 330.2 180.34) (xy 330.2 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3626a212-edc6-4706-90ee-018041be9664")
 	)
 	(wire
 		(pts
@@ -7698,6 +7704,16 @@
 			(type default)
 		)
 		(uuid "ec427862-2a17-4452-b173-158857afe9c1")
+	)
+	(wire
+		(pts
+			(xy 334.01 180.34) (xy 330.2 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee702666-6b2e-4c40-b88a-2c54cee6af4d")
 	)
 	(wire
 		(pts
@@ -9836,6 +9852,72 @@
 			(project ""
 				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 330.2 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1dc457f1-a0f2-4c9c-ae32-598c40fa7e70")
+		(property "Reference" "#PWR052"
+			(at 330.2 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 330.2 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 330.2 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "655b9c77-339c-4028-bb8f-9b3a5608fbfc")
+		)
+		(instances
+			(project ""
+				(path "/0e384709-6bce-4dbf-a0e0-550e970390f4"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
