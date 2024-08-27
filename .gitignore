@@ -30,3 +30,5 @@ fp-info-cache
 *.csv
 
 rtl/build
+rtl/.env
+rtl/*.bba
