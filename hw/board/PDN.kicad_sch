@@ -10120,6 +10120,25 @@
 		)
 		(uuid "ffb9ed27-1065-43a0-8e19-6df7b06f00e5")
 	)
+	(text_box "ICCINT:  95Q + 120 mA\nICCO:    1Q + 160  mA\nICCAUX:  22Q + 40  mA\nICCBRAM: 2Q + 60   mA"
+		(exclude_from_sim no)
+		(at 38.1 25.4 0)
+		(size 26.67 10.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "07b0a839-b7f3-4b99-aeb3-2b2cb2c3f052")
+	)
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
