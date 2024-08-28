@@ -34,7 +34,7 @@ module channel(
     );
 
 
-    ISERDESE2 
+    ISERDESE2
     #(.INTERFACE_TYPE("NETWORKING"), .DATA_WIDTH(8))
     rx_gearbox (
         .RST(1'b0),
@@ -51,9 +51,9 @@ module channel(
         .Q8(recv[7])
     );
 
-    
+
     wire tx_data;
-    
+
     OSERDESE2
     #(.DATA_RATE_OQ("SDR"), .DATA_WIDTH(8))
     tx_data_master(
@@ -86,7 +86,7 @@ module channel(
             else
                 assign tx_strobe_parallel[i] = txmt[i];
     endgenerate
-    
+
 
     OSERDESE2
     #(.DATA_RATE_OQ("SDR"), .DATA_WIDTH(8))

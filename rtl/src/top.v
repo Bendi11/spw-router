@@ -1,4 +1,4 @@
-module top 
+module top
 #(
     parameter COUNT = 8
 )
@@ -15,12 +15,12 @@ module top
     output wire [COUNT-1:0] sout_n,
     input wire clk
 );
-    
+
     wire[COUNT-1:0][7:0] data;
     wire[COUNT-1:0][7:0] txdata;
 
     genvar i;
-    
+
     generate
         for(i=0;i<COUNT;i=i+1)
             channel port(

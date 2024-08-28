@@ -88,7 +88,9 @@ if(${VERILATE})
     add_executable(spw-sim ${SIMULATOR_SRC})
     verilate(
         spw-sim
+        PREFIX VerilogSim
         SOURCES ${VERILOG_SRC} ${SIMULATOR_VERILOG_SRC}
         TOP_MODULE top
+        VERRILATOR_ARGS --vpi
     )
 endif()

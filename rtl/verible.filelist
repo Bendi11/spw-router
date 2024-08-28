@@ -1,0 +1,6 @@
+./sim/verilog/selectio/IBUFDS.v
+./sim/verilog/selectio/ISERDESE2.v
+./sim/verilog/selectio/OBUFDS.v
+./sim/verilog/selectio/OSERDESE2.v
+./src/channel.v
+./src/top.v

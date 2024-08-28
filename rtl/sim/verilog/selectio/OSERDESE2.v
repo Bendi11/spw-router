@@ -1,7 +1,7 @@
 module OSERDESE2
 #(
-    DATA_RATE_OQ="SDR",
-    DATA_WIDTH=8
+    parameter DATA_RATE_OQ="SDR",
+    parameter DATA_WIDTH=8
 )
 (
     input wire CLK,
