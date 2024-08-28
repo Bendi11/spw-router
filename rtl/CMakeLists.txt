@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 project(spw-router)
+option(VERILATE "Enable verilator simulator" ON)
 
 include("${CMAKE_CURRENT_SOURCE_DIR}/cmake/env.cmake")
 
@@ -16,8 +17,6 @@ set(
 
 set(DEVICE "xc7a35tftg256-2")
 set(CHIPDB "${CMAKE_CURRENT_SOURCE_DIR}/${DEVICE}.bin")
-
-message("sources are ${VERILOG_SRC}")
 
 add_custom_command(
     OUTPUT top.json
@@ -67,3 +66,24 @@ add_custom_target(
     bitstream ALL
     DEPENDS top.bit
 )
+
+if(${VERILATE})
+    set(SIM_SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/sim")
+
+    file(
+        GLOB_RECURSE
+        SIMULATOR_SRC
+        "${SIM_SRC_DIR}/*.cpp"
+    )
+
+    file(
+        GLOB_RECURSE
+        SIMULATOR_VERILOG_SRC
+        "${SIM_SRC_DIR}/verilog/*.v"
+    )
+    
+    find_package(verilator REQUIRED HINTS $ENV{VERILATOR_ROOT})
+    
+    add_executable(spw-sim ${SIMULATOR_SRC})
+    verilate(spw-sim SOURCES ${VERILOG_SRC} ${SIMULATOR_VERILOG_SRC})
+endif()

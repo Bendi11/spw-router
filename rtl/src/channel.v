@@ -48,7 +48,7 @@ module channel(
         .Q5(recv[4]),
         .Q6(recv[5]),
         .Q7(recv[6]),
-        .Q8(recv[7]),
+        .Q8(recv[7])
     );
 
     
@@ -66,7 +66,7 @@ module channel(
         .D5(txmt[4]),
         .D6(txmt[5]),
         .D7(txmt[6]),
-        .D8(txmt[7]),
+        .D8(txmt[7])
     );
 
     OBUFDS tx_data_ds (
