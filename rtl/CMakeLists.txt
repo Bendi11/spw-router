@@ -21,8 +21,8 @@ set(CHIPDB "${CMAKE_CURRENT_SOURCE_DIR}/${DEVICE}.bin")
 add_custom_command(
     OUTPUT top.json
     DEPENDS ${VERILOG_SRC}
-    COMMAND yosys -p
-        "synth_xilinx -flatten -nowidelut -abc9 -arch xc7 -top top; write_json top.json"
+    COMMAND ${YOSYS}
+        -p "synth_xilinx -flatten -nowidelut -abc9 -arch xc7 -top top; write_json top.json"
         ${VERILOG_SRC}
     VERBATIM
 )
@@ -53,7 +53,7 @@ add_custom_command(
 add_custom_command(
     OUTPUT top.bit
     DEPENDS top.frames
-    COMMAND ${XC7FRAMES2BIT}
+    COMMAND ${XRAY_XC7FRAMES2BIT}
         --part-file "${XRAY_DB_DIR}/artix7/${DEVICE}/part.yaml"
         --part_name ${DEVICE}
         --frm_file top.frames
