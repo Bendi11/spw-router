@@ -1,3 +1,6 @@
+set_property LOC C11 [get_ports clk]
+set_property IOSTANDARD LVCMOS25 [get_ports clk]
+
 set_property LOC K3 [get_ports din_p[0]]
 set_property IOSTANDARD LVDS_25 [get_ports din_p[0]]
 set_property LOC K2 [get_ports din_n[0]]

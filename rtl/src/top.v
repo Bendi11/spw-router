@@ -12,10 +12,12 @@ module top
     output wire [COUNT-1:0] dout_p,
     output wire [COUNT-1:0] dout_n,
     output wire [COUNT-1:0] sout_p,
-    output wire [COUNT-1:0] sout_n
+    output wire [COUNT-1:0] sout_n,
+    input wire clk
 );
     
     wire[COUNT-1:0][7:0] data;
+    wire[COUNT-1:0][7:0] txdata;
 
     genvar i;
     
@@ -31,8 +33,13 @@ module top
                     .tx_d_n(dout_n[i]),
                     .tx_s_p(sout_p[i]),
                     .tx_s_n(sout_n[i]),
-                    .recv(data[i])
+                    .recv(data[i]),
+                    .txmt(txdata[i]),
+                    .tx_clk(clk)
                 );
+
+                if(i != 0)
+                    assign txdata[i-1] = data[i];
             end
     endgenerate
 endmodule
