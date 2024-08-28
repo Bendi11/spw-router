@@ -34,7 +34,8 @@ module top
                 .tx_s_n(sout_n[i]),
                 .recv(data[i]),
                 .txmt(txdata[i]),
-                .tx_clk(clk)
+                .tx_clk(clk),
+                .tx_clk_div(clk)
             );
     endgenerate
 endmodule

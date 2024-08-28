@@ -74,6 +74,7 @@ if(${VERILATE})
         GLOB_RECURSE
         SIMULATOR_SRC
         "${SIM_SRC_DIR}/*.cpp"
+        "${SIM_SRC_DIR}/verilog/*.cpp"
     )
 
     file(
@@ -85,5 +86,9 @@ if(${VERILATE})
     find_package(verilator REQUIRED HINTS $ENV{VERILATOR_ROOT})
     
     add_executable(spw-sim ${SIMULATOR_SRC})
-    verilate(spw-sim SOURCES ${VERILOG_SRC} ${SIMULATOR_VERILOG_SRC})
+    verilate(
+        spw-sim
+        SOURCES ${VERILOG_SRC} ${SIMULATOR_VERILOG_SRC}
+        TOP_MODULE top
+    )
 endif()
