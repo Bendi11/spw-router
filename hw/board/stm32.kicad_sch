@@ -3121,7 +3121,7 @@
 			)
 		)
 	)
-	(global_label "DIN"
+	(global_label "FPGA_DIN"
 		(shape input)
 		(at 157.48 71.12 0)
 		(fields_autoplaced yes)
@@ -3133,7 +3133,7 @@
 		)
 		(uuid "645dd047-82e0-4c75-be2d-0ed62261de85")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.6705 71.12 0)
+			(at 169.3553 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3297,7 +3297,7 @@
 			)
 		)
 	)
-	(global_label "DOUT"
+	(global_label "FPGA_DOUT"
 		(shape input)
 		(at 157.48 68.58 0)
 		(fields_autoplaced yes)
@@ -3309,7 +3309,7 @@
 		)
 		(uuid "9806ce7d-27b4-42b3-9c01-90929f34c05b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.3638 68.58 0)
+			(at 171.0486 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3319,7 +3319,7 @@
 			)
 		)
 	)
-	(global_label "CCLK"
+	(global_label "FPGA_CCLK"
 		(shape input)
 		(at 157.48 66.04 0)
 		(fields_autoplaced yes)
@@ -3331,7 +3331,7 @@
 		)
 		(uuid "9e6f8ff4-bd6c-4ec9-9376-a4a1225fea1c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.3033 66.04 0)
+			(at 170.9881 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
