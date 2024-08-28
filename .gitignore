@@ -32,3 +32,4 @@ fp-info-cache
 rtl/build
 rtl/.env
 rtl/*.bba
+rtl/cmake/env.cmake

@@ -23,23 +23,18 @@ module top
     
     generate
         for(i=0;i<COUNT;i=i+1)
-            begin: port
-                channel port(
-                    .rx_d_p(din_p[i]),
-                    .rx_d_n(din_n[i]),
-                    .rx_s_p(sin_p[i]),
-                    .rx_s_n(sin_n[i]),
-                    .tx_d_p(dout_p[i]),
-                    .tx_d_n(dout_n[i]),
-                    .tx_s_p(sout_p[i]),
-                    .tx_s_n(sout_n[i]),
-                    .recv(data[i]),
-                    .txmt(txdata[i]),
-                    .tx_clk(clk)
-                );
-
-                if(i != 0)
-                    assign txdata[i-1] = data[i];
-            end
+            channel port(
+                .rx_d_p(din_p[i]),
+                .rx_d_n(din_n[i]),
+                .rx_s_p(sin_p[i]),
+                .rx_s_n(sin_n[i]),
+                .tx_d_p(dout_p[i]),
+                .tx_d_n(dout_n[i]),
+                .tx_s_p(sout_p[i]),
+                .tx_s_n(sout_n[i]),
+                .recv(data[i]),
+                .txmt(txdata[i]),
+                .tx_clk(clk)
+            );
     endgenerate
 endmodule
