@@ -91,6 +91,8 @@ if(${VERILATE})
         PREFIX VerilogSim
         SOURCES ${VERILOG_SRC} ${SIMULATOR_VERILOG_SRC}
         TOP_MODULE top
-        VERRILATOR_ARGS --vpi
+        VERRILATOR_ARGS
+            --vpi
+            -Wno-PINMISSING
     )
 endif()

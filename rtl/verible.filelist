@@ -3,4 +3,6 @@
 ./sim/verilog/selectio/OBUFDS.v
 ./sim/verilog/selectio/OSERDESE2.v
 ./src/channel.v
+./src/port_rx.v
+./src/port_tx.v
 ./src/top.v

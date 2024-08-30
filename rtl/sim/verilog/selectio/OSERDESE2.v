@@ -5,6 +5,7 @@ module OSERDESE2
 )
 (
     input wire CLK,
+    input wire CLKDIV,
     output wire OQ,
     input wire D1,
     input wire D2,
