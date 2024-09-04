@@ -1,0 +1,9 @@
+[package]
+name = "fw"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+stm32f3 = { version = "0.15", features = ["stm32f302", "rt"] }
+cortex-m = "0.7"
+cortex-m-rt = "0.6"
