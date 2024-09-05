@@ -1,7 +1,9 @@
 #![no_std]
 #![no_main]
 
-use core::panic::PanicInfo;
+mod flash;
+
+use core::{ops::Deref, panic::PanicInfo};
 
 use cortex_m_rt::entry;
 use stm32f3::stm32f302::Peripherals;
@@ -13,7 +15,9 @@ fn panic(pinfo: &PanicInfo) -> ! {
 
 #[entry]
 fn main() -> ! {
-    let gpio = Peripherals::take().unwrap();
+    let periph = Peripherals::take().unwrap();
 
-    loop {}
+    loop {
+        cortex_m::asm::delay(1);
+    }
 }
